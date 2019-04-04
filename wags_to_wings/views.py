@@ -44,4 +44,4 @@ def decreate_cart_item(request, pk):
 #     new_order = Order.objects.create(order_status="in process")
 #     new_order.save()
 #     # Create Shipping_Detail
-#     # Update Cart order #
+#     # Update Cart order 
