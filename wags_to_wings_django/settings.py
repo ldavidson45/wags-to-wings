@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'wags_to_wings_django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'wags2wings',
-        'USER': 'wags',
-        'PASSWORD': 'wings',
-        'HOST': 'localhost'
+        'NAME': 'taimhunm',
+        'USER': 'taimhunm',
+        'PASSWORD': '7_1eaWbXaIsriUtgbe9WUUirrAZH74gK',
+        'HOST': 'isilo.db.elephantsql.com'
     }
 }
 
