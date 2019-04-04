@@ -1,4 +1,17 @@
-body {
+@import url("https://fonts.googleapis.com/css?family=Kavoon");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid black;
   background-color: #234a5d;
+}
+
+.logo {
+  border-radius: 50px;
+  background-color: #fe5f55;
+  font-family: "Kavoon", cursive;
+  color: #f3faef;
 }
 /*# sourceMappingURL=main.css.map */

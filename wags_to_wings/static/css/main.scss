@@ -1,8 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Kavoon");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
 $darkblue: #234a5d;
 $lightblue: #c9ddff;
 $unsureifgreen: #f3faef;
 $brightred: #fe5f55;
+$mainfont: "Nunito", sans-serif;
 
-body {
+.navbar {
+  display: flex;
+  border: 1px solid black;
   background-color: $darkblue;
+}
+
+.logo {
+  border-radius: 50px;
+  background-color: $brightred;
+  font-family: "Kavoon", cursive;
+  color: $unsureifgreen;
 }
