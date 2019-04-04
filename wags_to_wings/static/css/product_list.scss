@@ -37,13 +37,53 @@ $lightgray: rgb(244, 242, 242);
 }
 
 .product-card {
+  background: $lightgray;
+  border-radius: 10%;
+  padding: 20px;
+  border: 0.04rem solid rgb(222, 220, 222);
+
   img {
     width: 200px;
     height: 150px;
     margin: 5px;
     border-radius: 10%;
   }
-  background: $lightgray;
-  border-radius: 10%;
-  padding: 20px;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  p {
+    font-family: $mainfont;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  button {
+    background-color: $brightred;
+    font-family: $mainfont;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 15%;
+    color: white;
+    width: 70%;
+    border-radius: 20px;
+    border: 0.04rem solid rgb(222, 220, 222);
+  }
+
+  button:focus {
+    outline: none;
+    background: #fe5f55;
+  }
+}
+
+.price {
+  color: $brightred;
+}
+
+.product-name {
+  color: $darkblue;
 }
