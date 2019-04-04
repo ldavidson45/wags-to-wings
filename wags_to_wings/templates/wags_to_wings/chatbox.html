@@ -1,3 +1,10 @@
 {% extends 'wags_to_wings/base.html' %} {% block content %}
-<p>Ideally this would render on the page as a chat box</p>
+<form>
+  <div class="chat-header">
+    <p>Ideally this would render on the page as a chat box</p>
+  </div>
+  <div class="chat-message">
+    <input type='text' maxlength="150" placeholder="Enter your message..."
+  </div>
+</form>
 {% endblock %}
