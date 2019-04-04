@@ -1,6 +1,10 @@
 {
     "version": 3,
+<<<<<<< HEAD
     "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,gBAAgB,EAAE,KAAK;CACxB",
+=======
+    "mappings": "AAKA,AAAA,IAAI,CAAC;EACJ,gBAAgB,EANN,OAAO;CAOjB",
+>>>>>>> d8bdc479c20eadf818fe54c326b3ce1e5aa76da6
     "sources": [
         "main.scss"
     ],
