@@ -7,10 +7,15 @@
     <!-- stylesheet link here -->
     <!-- font links here -->
     <link href="../../static/css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Wags to Wings</title>
   </head>
   <body>
     <nav>
+    <div class="navbar">
+    <div class="logo">
+    <h1>Wags to wings</h1>
+    </div>
       <div class="chat-trigger">
         <a href="#">
           <p>Live Chat</p>
@@ -45,11 +50,14 @@
         <!-- This is not as important as the first -->
       </div>
     </nav>
+    </nav>
     {% block content %} {% endblock %}
     <footer>
       <p>Some stuff down here</p>
       <!-- Two ribbons: one green and one in the same shade as nav bar -->
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../../static/js/paul_carousel.js"></script>
   </body>
   <script src="../../static/js/js/bin/materialize.js"
 </html>
