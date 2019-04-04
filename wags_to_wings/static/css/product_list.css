@@ -2,6 +2,8 @@
 .product-container {
   background-color: white;
   margin: 20px 10px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .product-container-title {
@@ -17,13 +19,16 @@
   color: #234a5d;
   font-family: "Nunito", sans-serif;
   font-weight: bolder;
-  margin-right: 20px;
+  font-size: 26px;
+  margin: 50px 20px 10px 0;
 }
 
 .product-container-title a {
   font-family: "Nunito", sans-serif;
   color: #2598d0;
   font-weight: 700;
+  font-size: 26px;
+  margin: 50px 20px 10px 0;
 }
 
 .product-cards-container {
@@ -31,23 +36,26 @@
   display: -ms-flexbox;
   display: flex;
   direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
 }
 
 .product-card {
   background: #f4f2f2;
-  border-radius: 10%;
-  padding: 20px;
+  border-radius: 10px;
+  padding: 10px;
   border: 0.04rem solid #dedcde;
+  margin: 20px 20px 20px 20px;
+  width: 300px;
 }
 
 .product-card img {
-  width: 200px;
-  height: 150px;
-  margin: 5px;
-  border-radius: 10%;
+  width: 90%;
+  margin: 5px auto;
+  height: 160px;
+  border-radius: 13px;
+  display: block;
 }
 
 .product-card div {
@@ -61,12 +69,13 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 5%;
 }
 
 .product-card p {
   font-family: "Nunito", sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .product-card button {
@@ -75,10 +84,10 @@
   font-size: 16px;
   font-weight: bold;
   padding: 10px 20px;
-  margin: 0 15%;
+  margin: 10px 25% 20px 25%;
   color: white;
-  width: 70%;
-  border-radius: 20px;
+  width: 50%;
+  border-radius: 25px;
   border: 0.04rem solid #dedcde;
 }
 
