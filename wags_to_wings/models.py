@@ -14,14 +14,24 @@ class Product(models.Model):
   description = models.TextField()
   image_url = models.CharField(max_length=300)
   animal_type = models.CharField(max_length=20)
+  category = models.CharField(max_length=30, default="toy")
+
+  def __str__(self):
+    return self.name
 
 class Cart_Item(models.Model):
   product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='product')
   quantity = models.IntegerField()
   cart = models.ForeignKey(Cart, on_delete=models.CASCADE, related_name='cart_items')
 
+  def __str__(self):
+    return self.product.name
+
 class Shipping_Detail(models.Model):
   name = models.CharField(max_length=100)
   address = models.TextField()
   credit_card_number = models.CharField(max_length=20)
   order = models.OneToOneField(Order, on_delete=models.CASCADE, related_name='shipping_detail')
+
+  def __str__(self):
+    return self.order
