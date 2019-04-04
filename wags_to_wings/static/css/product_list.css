@@ -82,9 +82,13 @@
   border: 0.04rem solid #dedcde;
 }
 
+.product-card button:active {
+  outline: none;
+  background: #d45149;
+}
+
 .product-card button:focus {
   outline: none;
-  background: #fe5f55;
 }
 
 .price {
