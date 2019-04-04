@@ -27,3 +27,15 @@ $brightred: #fe5f55;
 	font-family: 'Kavoon', cursive;
 	color: $unsureifgreen;
 }
+
+footer {
+	display: flex;
+	border: 1px solid black;
+	background-color: $darkblue;
+	color: $unsureifgreen;
+	height: auto;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px; /* Height of the footer */
+}

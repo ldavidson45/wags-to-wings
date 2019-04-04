@@ -23,4 +23,19 @@
   font-family: 'Kavoon', cursive;
   color: #f3faef;
 }
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid black;
+  background-color: #234a5d;
+  color: #f3faef;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  /* Height of the footer */
+}
 /*# sourceMappingURL=main.css.map */
