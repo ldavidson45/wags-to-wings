@@ -1,16 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:800");
+
 $darkblue: #234a5d;
 $lightblue: #c9ddff;
 $unsureifgreen: #f3faef;
 $brightred: #fe5f55;
+$mainfont: "Nunito", sans-serif;
+$linkblue: rgb(37, 152, 208);
+$lightgray: rgb(244, 242, 242);
 
 .product-container {
   background-color: white;
+  margin: 20px 10px;
 }
 
 .product-container-title {
+  display: flex;
+  align-items: center;
   h4 {
-    color: $brightred;
-    padding: 0;
-    list-style: none;
+    color: $darkblue;
+    font-family: $mainfont;
+    font-weight: bolder;
+    margin-right: 20px;
   }
+
+  a {
+    font-family: $mainfont;
+    color: $linkblue;
+    font-weight: 700;
+  }
+}
+
+.product-cards-container {
+  display: flex;
+  direction: row;
+  justify-content: space-evenly;
+}
+
+.product-card {
+  img {
+    width: 200px;
+    height: 150px;
+    margin: 5px;
+    border-radius: 10%;
+  }
+  background: $lightgray;
+  border-radius: 10%;
+  padding: 20px;
 }
