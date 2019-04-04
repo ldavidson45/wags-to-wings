@@ -1,0 +1,16 @@
+$darkblue: #234a5d;
+$lightblue: #c9ddff;
+$unsureifgreen: #f3faef;
+$brightred: #fe5f55;
+
+.product-container {
+  background-color: white;
+}
+
+.product-container-title {
+  h4 {
+    color: $brightred;
+    padding: 0;
+    list-style: none;
+  }
+}
