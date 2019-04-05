@@ -33,4 +33,38 @@ nav .brand-logo {
 .small-text {
   font-size: 0.85rem;
 }
+
+.dog-carousel-item {
+  background-image: url("../images/carousel_dog_20_7.jpg");
+  background-size: cover;
+}
+
+.carousel-banner-text-left {
+  font-size: 3rem !important;
+  font-weight: bolder;
+  color: #234a5d;
+  position: relative;
+  left: 5%;
+  top: 12%;
+}
+
+.carousel-support-text-right {
+  width: 30%;
+  font-size: 30pt !important;
+  position: relative;
+  left: 65%;
+  top: -10%;
+}
+
+.carousel-button-red {
+  color: #f3faef;
+  background-color: #fe5f55;
+  padding: 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 20pt;
+  position: relative;
+  left: 70%;
+  bottom: 30px;
+}
 /*# sourceMappingURL=main.css.map */
