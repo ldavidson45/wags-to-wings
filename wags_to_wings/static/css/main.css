@@ -34,7 +34,6 @@ nav .brand-logo {
   font-size: 0.85rem;
 }
 
-<<<<<<< HEAD
 .nav-links {
   margin-left: 20%;
   line-height: 30px;
@@ -95,7 +94,8 @@ nav .brand-logo {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   margin: 0;
-=======
+}
+
 .carousel {
   height: 550px;
 }
@@ -199,6 +199,5 @@ footer {
   height: 25%;
   position: relative;
   margin-top: 60px;
->>>>>>> 71abbf00b253bedb7700aae02406931647a1153d
 }
 /*# sourceMappingURL=main.css.map */
