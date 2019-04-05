@@ -11,7 +11,7 @@ def cart_detail(request, browser_id):
   users_cart = Cart.objects.filter(browser_id=browser_id)
   return render(request, 'wags_to_wings/cart_detail.html', {'cart': users_cart})
 
-def create_cart_item(request):
+def create_cart_item(request, pk):
   # this will be a POST method
   print("Create_Cart_Item called.")
   browser_id = request.browser_id
@@ -31,7 +31,7 @@ def increase_cart_item(request, pk):
   cart_item_in_question.save()
   print("If no error, cart_item quanitity should have incremented")
 
-def decreate_cart_item(request, pk):
+def decrement_cart_item(request, pk):
   cart_item_in_question = Cart_Item.objects.get(id=pk)
   cart_item_in_question.quantity -= 1
   cart_item_in_question.save()
