@@ -13,7 +13,7 @@ nav {
 nav .brand-logo {
   background-color: #fe5f55;
   border-radius: 100%;
-  font-family: 'Kavoon', cursive;
+  font-family: "Kavoon", cursive;
   color: #f3faef;
   padding: 0.8%;
   line-height: 30px;
@@ -123,5 +123,19 @@ nav .brand-logo {
 .carousel-download-button {
   position: relative;
   top: 60px;
+}
+
+footer {
+  position: static;
+  background-color: #f3faef;
+  margin-top: 155px;
+  height: 100px;
+}
+
+.dark-ribbon {
+  background-color: #234a5d;
+  height: 25%;
+  position: relative;
+  margin-top: 60px;
 }
 /*# sourceMappingURL=main.css.map */
