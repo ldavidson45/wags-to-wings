@@ -4,58 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- stylesheet link here -->
-    <!-- font links here -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
     <link href="../../static/css/main.css" rel="stylesheet" />
     <link href="../../static/css/product_list.css" rel="stylesheet" />
     <title>Wags to Wings</title>
   </head>
   <body>
     <nav>
-    <div class="navbar">
-    <div class="logo">
-    <h1>Wags to Wings</h1>
-    </div>
-      <div class="chat-trigger">
-        <a href="#">
-          <p>Live Chat</p>
-        </a>
-      </div>
-      <div class="pet-menu dropdown">
-        <a href="#">
-          <p>Search by pet</p>
-        </a>
-        <!-- chevron icon -->
-        <!-- dropdown linker here -->
-      </div>
-      <div class="brand-menu dropdown">
-        <a href="#">
-          <p>Search by brand</p>
-        </a>
-        <!-- same chevron -->
-        <!-- This is not as important as the first -->
-      </div>
-      <div class="pharma-menu dropdown">
-        <a href="#">
-          <p>Pharmacy</p>
-        </a>
-        <!-- same chevron -->
-        <!-- This is not as important as the first -->
-      </div>
-      <div class="sale-menu dropdown">
-        <a href="#">
-          <p>Sale</p>
-        </a>
-        <!-- same chevron -->
-        <!-- This is not as important as the first -->
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo"
+          ><span class="logo-text"
+            >Wags <span class="small-text">to</span><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;Wings</span
+          ></a
+        >
+        <ul id="dd2" class="dropdown-content">
+          <li>
+            <a href="#!">Dogs</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#!">Cats</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#!">Birds</a>
+          </li>
+        </ul>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a href="#" class="dropdown-trigger" data-target="dd2"
+              >Search by Pet</a
+            >
+          </li>
+          <li>
+            <a href="#">Components</a>
+          </li>
+          <li>
+            <a href="#">JavaScript</a>
+          </li>
+        </ul>
       </div>
     </nav>
-    </nav>
+
     {% block content %} {% endblock %}
     <footer>
       <p>Some stuff down here</p>
       <!-- Two ribbons: one green and one in the same shade as nav bar -->
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="../../static/js/paul_carousel.js"></script>
+    <script src="../../static/js/alsia_fab.js"></script>
   </body>
 </html>
