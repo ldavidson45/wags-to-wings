@@ -48,7 +48,13 @@ def decrement_cart_item(request, pk):
 
 
 def cart_form(request):
-    form = ShippingForm()
+    if request.method == "POST":
+        form = ShippingForm(request.POST)
+        if form.is_valid():
+            form = form.save()
+            return redirect('product_list', pk=ShippingForm.pk)
+    else:
+        form = ShippingForm()
     return render(request, 'wags_to_wings/cart_form.html', {'form': form})
 
 
