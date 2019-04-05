@@ -41,6 +41,58 @@ nav .brand-logo {
   font-size: 0.85rem;
 }
 
+.nav-links {
+  margin-left: 20%;
+  line-height: 30px;
+  li {
+    margin-top: 65px;
+    font-family: $mainfont;
+  }
+}
+
+.bigger-link {
+  font-size: 18px;
+  font-weight: 800;
+  padding-bottom: 15px;
+}
+
+.table {
+  display: table;
+}
+
+.horizontal {
+  min-width: 800px;
+  list-style: none;
+  padding-top: 20px;
+  background: $unsureifgreen;
+  border-bottom-style: solid black 0.05erm;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.dropdown-container {
+  background: $unsureifgreen;
+}
+
+.nav-dropdown-item {
+  display: inline-flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 5px 20px;
+  img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  p {
+    text-align: center;
+    color: black;
+    font-family: $mainfont;
+    font-weight: 600;
+    margin: 0;
+  }
+}
 // Carousel styles here
 .carousel {
   height: 550px;
