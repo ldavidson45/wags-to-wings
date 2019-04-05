@@ -4,14 +4,6 @@
   text-decoration: none;
 }
 
-.navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 1px solid black;
-  background-color: #234a5d;
-}
-
 nav {
   background-color: #234a5d;
   height: 110px;
