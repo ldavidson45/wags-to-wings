@@ -51,9 +51,33 @@ nav .brand-logo {
 
 
 // Carousel styles here
+.carousel {
+	height: 550px;
+}
+
 .dog-carousel-item {
   background-image: url('../images/carousel_dog_20_7.jpg');
   background-size: cover;
+}
+
+.cat-carousel-item {
+  background-image: url('../images/carousel_cat_20_7.jpg');
+  background-size: cover;
+}
+
+.parrot-carousel-item {
+  background-image: url('../images/carousel_parrot_20_7.jpg');
+  background-size: cover;
+}
+
+.carousel-banner-text-left {
+	font-size: 3rem !important;
+	font-weight: bolder;
+	color: $darkblue;
+	position: relative;
+	left: 8%;
+	top: 12%;
+	line-height: 30pt;
 }
 
 .carousel-banner-text-left {
@@ -71,10 +95,26 @@ nav .brand-logo {
 	position: relative;
 	left: 65%;
 	top: -10%;
+}
+
+.carousel-support-text-bottom-right {
+	width: 30%;
+	font-size: 30pt !important;
+	position: relative;
+	left: 75%;
+	top: 30%;
+}
+
+.carousel-support-text-left {
+	width: 30%;
+	font-size: 30pt !important;
+	position: relative;
+	left: 5%;
+	top: 3%;
 	
 }
 
-.carousel-button-red{
+.carousel-button-red-right{
 	color: $unsureifgreen;
 	background-color: $brightred;
 	padding: 30px;
@@ -84,6 +124,23 @@ nav .brand-logo {
 	position: relative;
 	left: 70%;
 	bottom: 30px;
+}
+
+.carousel-button-red-left{
+	color: $unsureifgreen;
+	background-color: $brightred;
+	padding: 30px;
+	border-radius: 25px;
+	font-weight: bold;
+	font-size: 20pt;
+	position: relative;
+	left: 5%;
+	top: 30px;
+}
+
+.carousel-download-button{
+	position: relative;
+	top: 60px;
 }
 
 // End carousel styles
