@@ -21,23 +21,23 @@
             &nbsp;&nbsp;&nbsp;&nbsp;Wings</span
           ></a
         >
-        <ul id="dd2" class="dropdown-content">
-          <li>
-            <a href="#!">Dogs</a>
-          </li>
-          <li class="divider"></li>
-          <li>
-            <a href="#!">Cats</a>
-          </li>
-          <li class="divider"></li>
-          <li>
-            <a href="#!">Birds</a>
-          </li>
-        </ul>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li>
-            <a href="#" class="dropdown-trigger" data-target="dd2"
-              >Search by Pet</a
+        {% comment %} <ul id="dd2" class="dropdown-content">
+
+        </ul> {% endcomment %}
+
+  <div class="table">
+    <div id="dd2" class="dropdown-content horizontal">
+      <a class="nav-dropdown-item"><img src="../../static/images/puppyicon.jpg"/><p>Dog</p></a>
+      <a class="nav-dropdown-item"><p>dog</p></a>
+    </div>
+  </div>
+
+
+        <ul id="nav-mobile" class="nav-links hide-on-med-and-down">
+          <li >
+            <a href="#" class="bigger-link dropdown-trigger" data-target="dd2"
+              >
+              Search by Pet </a
             >
           </li>
           <li>
@@ -62,7 +62,7 @@
             <a href="#">Pharmacy</a>
           </li>
             <li>
-            <a href="{% url 'cart_form' %}">Cart</a>
+            {% comment %} <a href="{% url 'cart_form' %}">Cart</a> {% endcomment %}
             </li>
         </ul>
       </div>
