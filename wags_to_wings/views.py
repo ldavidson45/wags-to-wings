@@ -47,8 +47,13 @@ def decrement_cart_item(request, pk):
     print("If no error, cart_item quanitty should have decremented")
 
 
-def cart_form(request):
-    form = ShippingForm()
+def cart_form(request, self):
+    if request.method == "POST":
+        form = ShippingForm(request.POST)
+        ShippingForm.save(self)
+        return redirect('cart_form.html', pk=ShippingForm.pk)
+    else:
+        form = ShippingForm()
     return render(request, 'wags_to_wings/cart_form.html', {'form': form})
 
 
