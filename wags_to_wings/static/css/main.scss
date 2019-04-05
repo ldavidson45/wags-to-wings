@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css?family=Kavoon");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+$darkblue: #234a5d;
+$lightblue: #c9ddff;
+$unsureifgreen: #f3faef;
+$brightred: #fe5f55;
+$mainfont: "Nunito", sans-serif;
+
+* {
+  text-decoration: none;
+}
+
+nav {
+  background-color: $darkblue;
+  height: 110px;
+  line-height: 110px;
+}
+
+nav .brand-logo {
+  background-color: $brightred;
+  border-radius: 100%;
+  font-family: "Kavoon", cursive;
+  color: $unsureifgreen;
+  padding: 0.8%;
+  line-height: 30px;
+  margin-left: 15px;
+  margin-top: 15px;
+  width: 165px;
+  height: 75%;
+  text-align: center;
+  font-size: 20pt;
+  font-weight: 900;
+}
+
+.logo-text {
+  margin-left: -25px;
+}
+
+.small-text {
+  font-size: 0.85rem;
+}
+
+.nav-links {
+  margin-left: 20%;
+  line-height: 30px;
+  li {
+    margin-top: 65px;
+    font-family: $mainfont;
+  }
+}
+
+.bigger-link {
+  font-size: 18px;
+  font-weight: 800;
+  padding-bottom: 15px;
+}
+
+.table {
+  display: table;
+}
+
+.horizontal {
+  min-width: 800px;
+  list-style: none;
+  padding-top: 20px;
+  background: $unsureifgreen;
+  border-bottom-style: solid black 0.05erm;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.dropdown-container {
+  background: $unsureifgreen;
+}
+
+.nav-dropdown-item {
+  display: inline-flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 5px 20px;
+  img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  p {
+    text-align: center;
+    color: black;
+    font-family: $mainfont;
+    font-weight: 600;
+    margin: 0;
+  }
+}
+// Carousel styles here
+.carousel {
+  height: 550px;
+}
+
+.dog-carousel-item {
+  background-image: url("../images/carousel_dog_20_7.jpg");
+  background-size: cover;
+}
+
+.cat-carousel-item {
+  background-image: url("../images/carousel_cat_20_7.jpg");
+  background-size: cover;
+}
+
+.parrot-carousel-item {
+  background-image: url("../images/carousel_parrot_20_7.jpg");
+  background-size: cover;
+}
+
+.carousel-banner-text-left {
+  font-size: 3rem !important;
+  font-weight: bolder;
+  color: $darkblue;
+  position: relative;
+  left: 8%;
+  top: 12%;
+  line-height: 30pt;
+}
+
+.carousel-banner-text-left {
+  font-size: 3rem !important;
+  font-weight: bolder;
+  color: $darkblue;
+  position: relative;
+  left: 5%;
+  top: 12%;
+}
+
+.carousel-support-text-right {
+  width: 30%;
+  font-size: 30pt !important;
+  position: relative;
+  left: 65%;
+  top: -10%;
+}
+
+.carousel-support-text-bottom-right {
+  width: 30%;
+  font-size: 30pt !important;
+  position: relative;
+  left: 75%;
+  top: 30%;
+}
+
+.carousel-support-text-left {
+  width: 30%;
+  font-size: 30pt !important;
+  position: relative;
+  left: 5%;
+  top: 3%;
+}
+
+.carousel-button-red-right {
+  color: $unsureifgreen;
+  background-color: $brightred;
+  padding: 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 20pt;
+  position: relative;
+  left: 70%;
+  bottom: 30px;
+}
+
+.carousel-button-red-left {
+  color: $unsureifgreen;
+  background-color: $brightred;
+  padding: 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 20pt;
+  position: relative;
+  left: 5%;
+  top: 30px;
+}
+
+.carousel-download-button {
+  position: relative;
+  top: 60px;
+}
+
+// End carousel styles
+
+footer {
+  position: static;
+  background-color: $unsureifgreen;
+  margin-top: 155px;
+  height: 100px;
+}
+.dark-ribbon {
+  background-color: #234a5d;
+  height: 25%;
+  // min-height: 1vh;
+  position: relative;
+  margin-top: 60px;
+}

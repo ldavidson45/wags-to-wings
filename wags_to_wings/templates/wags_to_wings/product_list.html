@@ -1,0 +1,58 @@
+{% extends 'wags_to_wings/base.html' %} 
+{% block content %}
+
+{% include 'wags_to_wings/carousel.html' %}
+
+<section class="product-container">
+
+    <div class="product-container-title">
+        <h4>FOOD & TREATS</h4>
+        <a href="#">SEE ALL</a>
+    </div>
+
+
+    <div class="product-cards-container">
+
+    {% for item in food_items %}
+        <div class="product-card">
+            <img src="{{item.image_url}}">
+            <div>       
+                <p class="product-name">{{item.name}}</p>
+                <p class="price">${{item.price}}.95</p>
+            </div> 
+
+            <button>Add To Cart</button>
+        </div>
+    {% endfor %}
+    </div>
+
+</section>
+
+<section class="product-container">
+
+    <div class="product-container-title">
+        <h4>TOYS THEY'LL LOVE</h4>
+        <a href="#">SEE ALL</a>
+    </div>
+
+    <div class="product-cards-container">
+
+    {% for item in toy_items %}
+        <div class="product-card">
+            <img src="{{item.image_url}}">
+            <div>       
+                <p class="product-name">{{item.name}}</p>
+                <p class="price">${{item.price}}.95</p>
+            </div> 
+
+            <button>Add To Cart</button>
+        </div>
+    {% endfor %}
+
+
+</div>
+
+</section>
+
+
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'wags_to_wings/base.html' %} {% block content %}
+
+    <h2>Shopping Cart</h2>
+    <form method="POST" class="cart-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+
+
+
+{% endblock %}
+
+

@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:800");
+
+$darkblue: #234a5d;
+$lightblue: #c9ddff;
+$unsureifgreen: #f3faef;
+$brightred: #fe5f55;
+$mainfont: "Nunito", sans-serif;
+$linkblue: rgb(37, 152, 208);
+$lightgray: rgb(244, 242, 242);
+
+.product-container {
+  background-color: white;
+  margin: 20px 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-container-title {
+  display: flex;
+  align-items: center;
+  h4 {
+    color: $darkblue;
+    font-family: $mainfont;
+    font-weight: bolder;
+    font-size: 26px;
+    margin: 50px 20px 10px 0;
+  }
+
+  a {
+    font-family: $mainfont;
+    color: $linkblue;
+    font-weight: 700;
+    font-size: 26px;
+    margin: 50px 20px 10px 0;
+  }
+}
+
+.product-cards-container {
+  display: flex;
+  direction: row;
+  //   justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.product-card {
+  background: $lightgray;
+  border-radius: 10px;
+  padding: 10px;
+  border: 0.04rem solid rgb(222, 220, 222);
+  margin: 20px 20px 20px 20px;
+  width: 300px;
+
+  img {
+    width: 90%;
+    margin: 5px auto;
+    height: 160px;
+    border-radius: 13px;
+    display: block;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 5%;
+  }
+
+  p {
+    font-family: $mainfont;
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+  button {
+    background-color: $brightred;
+    font-family: $mainfont;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 10px 25% 20px 25%;
+    color: white;
+    width: 50%;
+    border-radius: 25px;
+    border: 0.04rem solid rgb(222, 220, 222);
+  }
+
+  button:active {
+    outline: none;
+    background: #d45149;
+  }
+
+  button:focus {
+    outline: none;
+  }
+}
+
+.price {
+  color: $brightred;
+}
+
+.product-name {
+  color: $darkblue;
+}

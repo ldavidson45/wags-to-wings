@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="../../static/css/main.css" rel="stylesheet" />
+    <link href="../../static/css/product_list.css" rel="stylesheet" />
+    <title>Wags to Wings</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo"
+          ><span class="logo-text"
+            >Wags <span class="small-text">to</span><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;Wings</span
+          ></a
+        >
+        {% comment %} <ul id="dd2" class="dropdown-content">
+
+        </ul> {% endcomment %}
+
+  <div class="table">
+    <div id="dd2" class="dropdown-content horizontal">
+      <a class="nav-dropdown-item"><img src="../../static/images/puppyicon.jpg"/><p>Dog</p></a>
+      <a class="nav-dropdown-item"><img src="../../static/images/cat.jpg"/><p>Cat</p></a>
+      <a class="nav-dropdown-item"><img src="../../static/images/fish.jpg"/><p>Fish</p></a>
+      <a class="nav-dropdown-item"><img src="../../static/images/bird.jpg"/><p>Bird</p></a>
+      <a class="nav-dropdown-item"><img src="../../static/images/rabbit.jpg"/><p>Small Animals</p></a>
+      <a class="nav-dropdown-item"><img src="../../static/images/lizard.jpg"/><p>Reptiles</p></a>
+
+
+    </div>
+  </div>
+
+
+        <ul id="nav-mobile" class="nav-links hide-on-med-and-down">
+          <li >
+            <a href="#" class="bigger-link dropdown-trigger" data-target="dd2"
+              >
+              Search by Pet </a
+            >
+          </li>
+          <li>
+            <a href="#" class="dropdown-trigger" data-target="brand"
+              >Search by Brand</a
+            >
+          </li>
+          <ul id="brand" class="dropdown-content">
+            <li>
+              <a href="#!">stuff</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#!">Cat stuff</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#!">Birds stuff</a>
+            </li>
+          </ul>
+          <li>
+            <a href="#">Pharmacy</a>
+          </li>
+          <li>
+            <a href="{% url 'cart_form' %}">Cart</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    {% block content %} {% endblock %}
+    <footer>
+      <div class=" chat fixed-action-btn">
+        <a href="#">
+          <i class="medium material-icons">mode_comment</i>
+        </a>
+        <span style="font-size:20px; display:block;">Need Help?</span>
+      </div>
+      <p>Some stuff down here</p>
+      <!-- Two ribbons: one green and one in the same shade as nav bar -->
+      <div class="dark-ribbon">
+        <p>Company &copy;2019</p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../../static/js/paul_carousel.js"></script>
+    <script src="../../static/js/alsia_fab.js"></script>
+  </body>
+</html>
